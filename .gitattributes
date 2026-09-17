@@ -1,0 +1,48 @@
+# ==============================================================================
+# Git Attributes configuration for Auralis
+# ==============================================================================
+
+# Set default behavior to automatically normalize line endings to LF
+* text=auto eol=lf
+
+# ------------------------------------------------------------------------------
+# Source Code (Enforce LF for Android / Kotlin / Java / Python / Web)
+# ------------------------------------------------------------------------------
+*.kt text eol=lf
+*.kts text eol=lf
+*.java text eol=lf
+*.py text eol=lf
+*.xml text eol=lf
+*.json text eol=lf
+*.properties text eol=lf
+*.md text eol=lf
+*.pro text eol=lf
+*.gradle text eol=lf
+*.sh text eol=lf
+
+# Explicitly ensure Gradle wrapper shell script uses LF
+gradlew text eol=lf
+
+# ------------------------------------------------------------------------------
+# Windows Scripts (Enforce CRLF)
+# ------------------------------------------------------------------------------
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# ------------------------------------------------------------------------------
+# Binary Files (Prevent Git from attempting line-ending conversion or diffing)
+# ------------------------------------------------------------------------------
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.svg text
+*.so binary
+*.jks binary
+*.keystore binary
+*.apk binary
+*.aab binary
+*.dex binary

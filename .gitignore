@@ -1,0 +1,116 @@
+# ==============================================================================
+# Auralis Android (.gitignore)
+# Tech Stack: Android Native (Kotlin + Jetpack Compose) + Chaquopy (Python 3.10)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Built-in Gradle & Build Cache Directories
+# ------------------------------------------------------------------------------
+.gradle/
+build/
+*/build/
+app/build/
+.kotlin/
+
+# Explicitly ensure Gradle Wrapper JAR is committed
+!gradle/wrapper/gradle-wrapper.jar
+
+# ------------------------------------------------------------------------------
+# Local Environment & SDK Configuration (Machine-specific)
+# ------------------------------------------------------------------------------
+local.properties
+.navigation/
+
+# AI Agent & Internal Workspace Tooling
+.agents/
+AGENTS.md
+DESIGN.md
+
+# Raw External Asset Dumps (Real icons are in app/src/main/res/)
+assets/
+
+# Android Studio / IntelliJ IDEA Workspace
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# ------------------------------------------------------------------------------
+# Keystores & Signing Secrets (DO NOT COMMIT!)
+# ------------------------------------------------------------------------------
+*.jks
+*.keystore
+*.p12
+*.pem
+signing.properties
+release-signing.properties
+secrets.properties
+secrets.xml
+google-services.json
+
+# ------------------------------------------------------------------------------
+# Built Packages & Compiled Android Binaries
+# ------------------------------------------------------------------------------
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+captures/
+
+# ------------------------------------------------------------------------------
+# Chaquopy & Python Artifacts (Client-Side yt-dlp Engine)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.chaquopy/
+*.whl
+pip-wheel-metadata/
+.pytest_cache/
+.coverage
+
+# ------------------------------------------------------------------------------
+# Media Downloads & Stream Temp Caches
+# ------------------------------------------------------------------------------
+*.part
+*.ytdl
+*.temp
+*.tmp
+.cache/
+
+# Audio / Video test files if generated locally
+*.mp3
+*.m4a
+*.flac
+*.opus
+*.webm
+*.mp4
+*.m4v
+
+# ------------------------------------------------------------------------------
+# Operating System & Editor Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux / Vim / Backup
+*~
+*.swp
+*.swo
+*.bak
