@@ -1,0 +1,62 @@
+name: Bug Report
+description: Report an issue, crash, or unexpected behavior in Auralis
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please ensure you are running the latest version of Auralis and have checked existing issues before submitting.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what happened...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Detailed steps explaining how to reproduce the bug.
+      placeholder: |
+        1. Open Home tab
+        2. Paste YouTube URL '...'
+        3. Select MP3 320kbps format
+        4. Tap Download
+        5. See error / crash
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen instead?
+      placeholder: The audio file should download and index in the Library tab.
+    validations:
+      required: true
+  - type: input
+    id: device_info
+    attributes:
+      label: Device & OS
+      description: Device model and Android OS version
+      placeholder: e.g., Google Pixel 7, Android 14 (API 34)
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: Auralis Version
+      description: App version from Settings / About screen
+      placeholder: e.g., 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs or Screenshots
+      description: Paste relevant Logcat output or stack traces here. Please remove any private information.
+      render: shell
+    validations:
+      required: false

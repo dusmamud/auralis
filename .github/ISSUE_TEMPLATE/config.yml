@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security Vulnerabilities
+    url: https://github.com/dusmamud/auralis/security/policy
+    about: Please report security issues confidentially via our Security Policy.
+  - name: General Discussions & Questions
+    url: https://github.com/dusmamud/auralis/discussions
+    about: Ask questions, share feedback, and discuss with the community.
