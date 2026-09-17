@@ -3,19 +3,11 @@ updates:
   - package-ecosystem: "gradle"
     directory: "/"
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    # Ignore breaking major version upgrades for tightly coupled Android/Python toolchains
-    ignore:
-      - dependency-name: "com.android.application"
-      - dependency-name: "com.android.library"
-      - dependency-name: "com.chaquo.python"
-      - dependency-name: "gradle-wrapper"
-      - dependency-name: "org.jetbrains.kotlin.*"
-      - dependency-name: "androidx.core:core-ktx"
+      interval: "monthly"
+    open-pull-requests-limit: 0
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
-    open-pull-requests-limit: 3
+    open-pull-requests-limit: 0
