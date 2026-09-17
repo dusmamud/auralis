@@ -48,6 +48,24 @@ jobs:
           draft: false
           prerelease: false
           generate_release_notes: true
+          body: |
+            ## 🎵 Auralis ${{ github.ref_name }} - Initial Production Release
+            High-performance client-side extractor, embedded Media3 offline player, and lossless media manager for Android.
+
+            ### ✨ Key Highlights:
+            - **100% Client-Side Engine**: Powered by embedded Chaquopy (Python 3.10) running `yt-dlp` and `mutagen` on-device. Zero server reliance.
+            - **Lossless Audio Extraction**: Direct raw stream grabbing and transcoding to MP3 (up to 320 kbps), M4A, FLAC, and Opus.
+            - **Automated Metadata & ID3 Tagging**: Embedded high-resolution album artwork, track title, artist, and album name.
+            - **4K UHD & HD Video Downloader**: High-definition video downloading up to 4K / 1080p 60FPS remuxed to standard MP4 with Scoped Storage indexing in `Movies/Auralis`.
+            - **Built-in Offline Media Player**:
+              - **Audio Player**: Background playback backed by AndroidX Media3 `MediaSessionService` with lockscreen controls.
+              - **Offline Video Player**: Gestural video player with vertical brightness/volume swipes, double-tap seek, and aspect ratio scaling.
+            - **In-App Dynamic Engine Updater**: Hot-update `yt-dlp` wheels directly from Settings without waiting for new APK releases.
+            - **Pure Jetpack Compose UI**: Designed to specification with dark theme aesthetics, zero-shadow chrome, and responsive orientation handling.
+
+            ---
+            ### 📦 Installation
+            Download the `Auralis-${{ github.ref_name }}.apk` asset below and install it on your device running Android 8.0+ (API 26+).
           files: |
             release-artifacts/Auralis-${{ github.ref_name }}.apk
         env:
