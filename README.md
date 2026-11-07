@@ -282,3 +282,4 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 > Tip: In the video player, swipe vertically on the left for brightness and on the right for volume, double-tap to seek 10s back or forward, and change speed from 0.5x to 2.0x.
 > Tip: When YouTube changes its player cipher, use the in-app dynamic engine updater in Settings to fetch the latest `yt-dlp` update — no new APK release is needed.
 > Tip: Audio playback runs in the background via AndroidX Media3 `MediaSessionService`, with persistent notifications, lockscreen controls, playlist queuing, and system volume ducking.
+> Tip: Auralis needs Android 8.0+ (API 26) and builds with `./gradlew assembleDebug` — the debug APK lands at `app/build/outputs/apk/debug/app-debug.apk`.
