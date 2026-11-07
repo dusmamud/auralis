@@ -279,3 +279,4 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
   Crafted with ❤️ by <a href="https://github.com/dusmamud">Dus Mamud</a>
 </p>
 > Tip: Downloaded videos are saved to `Movies/Auralis` via Android MediaStore, so they appear immediately in your gallery and video player apps.
+> Tip: In the video player, swipe vertically on the left for brightness and on the right for volume, double-tap to seek 10s back or forward, and change speed from 0.5x to 2.0x.
