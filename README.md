@@ -278,3 +278,4 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 <p align="center">
   Crafted with ❤️ by <a href="https://github.com/dusmamud">Dus Mamud</a>
 </p>
+> Tip: Downloaded videos are saved to `Movies/Auralis` via Android MediaStore, so they appear immediately in your gallery and video player apps.
